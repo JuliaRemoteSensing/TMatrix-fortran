@@ -5,3 +5,4 @@ add_project_arguments('-fno-f2c', language: 'fortran')
 
 shared_library('tmatrixfo', files('ampld.lp.f', 'lpd.f'), install : true)
 shared_library('tmatrixro', files('tmd.lp.f', 'lpd.f'), install : true)
+install_data('LICENSE', install_dir: '/workspace/destdir/shared/licenses')
